@@ -45,6 +45,6 @@ for img, name, english in lista_img:
 
 html = html_template.substitute(body = texto_img)
 
-archivo = open('index.html', 'w+') 
+archivo = open('index.html', 'w+', encoding='utf-8') 
 archivo.write(html)
 archivo.close()
